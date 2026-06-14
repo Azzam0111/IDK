@@ -1,0 +1,8 @@
+import random
+
+gatau = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+panjang = int(input("Masukkan panjang kata sandi yang diinginkan: "))
+kata_sandi = ""
+for i in range(panjang):
+    kata_sandi += random.choice(gatau)
+print("Kata sandi yang dihasilkan:", kata_sandi)
